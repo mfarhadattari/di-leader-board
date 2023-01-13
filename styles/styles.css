@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -47,3 +48,34 @@ body {
     font-size: 18px;
 }
 
+/* Media Queries */
+
+/* Mobile Device Responsive */
+@media only screen and (max-width:668px) {
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .management-board-title{
+        font-size: 20px;
+    }
+    .members {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Pad Device Responsive */
+@media only screen and (min-width:668px)  and (max-width:992px){
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .management-board-title{
+        font-size: 20px;
+    }
+    .members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
