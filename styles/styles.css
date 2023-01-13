@@ -18,6 +18,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 10px;
 }
+
 .container-title {
     font-size: 24px;
     color: #562EFF;
@@ -25,11 +26,16 @@ body {
     text-align: center;
 }
 
-hr{
+hr {
     border: 1px solid #D1D1D1;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+a {
+    text-decoration: none;
+}
+
 /* Member Board Styles */
 
 
@@ -57,18 +63,20 @@ hr{
 /* -------------------------
 Blogs Section Styles
 ----------------------------- */
-.blogs{
+.blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
-.blog{
+
+.blog {
     display: flex;
     gap: 16px;
     box-shadow: 2px 2px 2px 2px #F3F1FF;
     border-radius: 10px;
     padding: 10px;
 }
+
 .blog-banner img {
     width: 177px;
     height: 117px;
@@ -84,6 +92,29 @@ Blogs Section Styles
     color: #9F9F9F;
 }
 
+/* Videos Section Styles */
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.video {
+    box-shadow: 2px 2px 2px 2px #F3F1FF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.video img {
+    width: 224px;
+    height: 104px;
+}
+
+.video-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 /* Media Queries */
 
 /* Mobile Device Responsive */
@@ -92,6 +123,7 @@ Blogs Section Styles
         width: 100%;
         margin: 0;
         padding: 0;
+        padding-top: 15px;
         padding-left: 15px;
     }
 
@@ -100,38 +132,44 @@ Blogs Section Styles
 
     }
 
-      /* Management Board styles */
+    /* Management Board styles */
     .members {
         grid-template-columns: repeat(1, 1fr);
     }
 
     /* Blogs Styles */
-    .blogs{
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* Videos Section Styles */
+    .videos {
+        grid-template-columns: repeat(1, 1fr);
 
-}
-
-/* Pad Device Responsive */
-@media only screen and (min-width:668px) and (max-width:992px) {
-
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container-title  {
-        font-size: 20px;
-    }
-
-   /* Management Board styles */
-    .members {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-.hide {
-    display: none;
-}
+    /* Pad Device Responsive */
+    @media only screen and (min-width:668px) and (max-width:992px) {
+
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+        }
+
+        .container-title {
+            font-size: 20px;
+        }
+
+        /* Management Board styles */
+        .members {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Videos Section Styles */
+        .videos {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
