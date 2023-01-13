@@ -145,7 +145,10 @@ Blogs Section Styles
     /* Videos Section Styles */
     .videos {
         grid-template-columns: repeat(1, 1fr);
-
+    }
+    .video{
+        display: flex;
+        gap: 10px;
     }
 }
 
