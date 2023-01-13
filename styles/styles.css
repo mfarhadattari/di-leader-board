@@ -56,9 +56,11 @@ body {
         width: 100%;
         margin: 0;
         padding: 0;
+        padding-left: 15px;
     }
     .management-board-title{
         font-size: 20px;
+        
     }
     .members {
         grid-template-columns: repeat(1, 1fr);
@@ -78,4 +80,7 @@ body {
     .members {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+.hide{
+    display: none;
 }
